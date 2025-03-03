@@ -40,7 +40,7 @@ if (!$ejecutar) {
 echo '
 <script>
 alert("Pago por crédito registrado exitosamente.");
-window.location = "/cometwds/Frontend/html/index.php";
+window.location = "/cometwds/index.php";
 </script>
 ';
 

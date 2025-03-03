@@ -54,7 +54,7 @@ if ($ejecutar) {
     echo '
     <script>
     alert("Usuario registrado exitosamente");
-    window.location = "/cometwds/Frontend/html/index.php";
+    window.location = "/cometwds/index.php";
     </script>
     ';
 } else {

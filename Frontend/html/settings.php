@@ -45,7 +45,7 @@ session_start();
                     <h2>cometwds</h2>
                 </div>
                 <nav class="nav">
-                    <a href="index.php">Home</a>
+                    <a href="/cometwds/index.php">Home</a>
                     <a href="services.php">Services</a>
                     <a href="portafolio.php">Portfolio</a>
 
