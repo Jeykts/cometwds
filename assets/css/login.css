@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/cometwds/assets/imagenes/bosque.jpg'); /* Fondo de la página */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen de fondo */
+    font-family: 'YourFontFamily', sans-serif; /* Ajusta esto al nombre de tu fuente */
+}
+
+.login-background {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 400px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el formulario horizontalmente */
+    text-align: center;
+}
+
+.login-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 300px; /* Ancho específico para centrar los inputs */
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: border 0.3s ease;
+}
+
+/* Placeholder */
+.form-input::placeholder {
+    color: #888;
+}
+
+/* Estilo del botón */
+.btn-login {
+    width: 200px; /* Ancho del botón más amplio que los inputs */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Efecto de hover en el botón */
+.btn-login:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* Enlaces de contraseña olvidada y registro */
+.forgot-password, .signup-link {
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño más grande */
+    margin-top: 20px; /* Espacio superior aumentado */
+}
+
+.forgot-password a, .signup-link a {
+    color: #ffffff; /* Cambiado a blanco */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+.logo {
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo-img {
+    width: 80px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    filter: brightness(0) invert(1); /* Cambia el color a blanco */
+}
+
+.footer {
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+
+}
+
+/* Estilo del contenedor de recuperar contraseña */
+.recover-background {
+    background-color: #1e1e1e; /* Fondo sólido para el formulario */
+    border-radius: 10px;
+    padding: 50px; /* Padding para hacer el formulario más grande */
+    max-width: 350px; /* Ancho máximo del formulario */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/* Estilo del título */
+.recover-title {
+    font-size: 2.0rem; /* Tamaño del título */
+    color: #ffffff; /* Color blanco */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio debajo del título */
+    letter-spacing: 1px; /* Espaciado de letras */
+}
+
+/* Grupo de formulario */
+.recover-form-group {
+    width: 100%; /* Ancho completo para el grupo de formulario */
+    margin-bottom: 25px; /* Espacio entre los grupos de formulario */
+}
+
+/* Estilo de los inputs */
+.recover-input {
+    width: 300px; /* Ancho del input reducido para centrar mejor */
+    padding: 15px; /* Relleno más grande */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e; /* Fondo del input */
+    color: #ffffff; /* Color del texto en el input */
+    font-size: 1.1rem; /* Tamaño del texto */
+    transition: border 0.3s ease; /* Transición para el borde */
+    text-align: center;
+    justify-content: center;
+}
+
+/* Placeholder */
+.recover-input::placeholder {
+    color: #888; /* Color del placeholder */
+}
+
+/* Enfoque del input */
+.recover-input:focus {
+    border-color: #ffffff; /* Cambiar el color del borde al hacer foco */
+    outline: none; /* Eliminar el contorno por defecto */
+}
+
+/* Efecto de hover en inputs */
+.recover-input:hover {
+    border-color: #ffffff; /* Color blanco al pasar el mouse */
+    border-width: 3px; /* Grosor del borde al pasar el mouse */
+}
+
+/* Estilo del botón */
+.btn-recover {
+    width: 80%; /* Ancho del botón reducido para centrar mejor */
+    padding: 15px; /* Relleno más grande */
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo del botón cambiado a blanco */
+    color: #000000; /* Color del texto del botón cambiado a negro */
+    font-size: 1.1rem; /* Tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición para el fondo */
+    margin-top: 15px; /* Espacio superior */
+}
+
+/* Efecto de hover en el botón */
+.btn-recover:hover {
+    background-color: #f0f0f0; /* Color más oscuro al pasar el mouse */
+}
+
+/* Enlace para volver al inicio de sesión */
+.back-to-login {
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño más grande */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.back-to-login a {
+    color: #ffffff; /* Cambiado a blanco */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+/* Estilo del logo */
+.recover-logo {
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.recover-logo-img {
+    width: 70px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    filter: brightness(0) invert(1); /* Cambia el color a blanco */
+}
+.bg-stars {
+    position: absolute; /* Cambiar a absolute */
+    top: 0;
+    left: 0;
+    width: 100%; /* Que ocupe el ancho completo */
+    height: 100%; /* Ajustar la altura automáticamente según el contenido */
+    z-index: -1;
+    background-size: auto;
+    animation: animateBg 5s linear infinite;
+  }
+  .star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+
+.star::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.8;
+    }
+    100% {
+      transform: rotate(315deg) translateX(-1000px); /* Mantener la caída diagonal */
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0;
+    }
+  }
+  
+  /* Estrellas en diferentes posiciones */
+  .star:nth-child(1) {
+    top: 10%;
+    left: 7%;
+    animation-duration: 3s;
+  }
+  .star:nth-child(2) {
+    top: 20%;
+    left: 45%;
+    animation-duration: 4s;
+  }
+  
+  .star:nth-child(3) {
+    top: 4%;
+    left: 86%;
+    animation-duration: 2s;
+  }
+  
+  .star:nth-child(4) {
+    top: 20%;
+    left: 15%;
+    animation-duration: 4s;
+  }
+  
+  .star:nth-child(5) {
+    top: 10%;
+    left: 40%;
+    animation-duration: 3s;}
+/* Estilo general para pantallas pequeñas */
+@media (max-width: 375px) {
+    .login-background, .recover-background {
+        padding: 30px;
+        max-width: 300px;
+    }
+    .login-title, .recover-title {
+        font-size: 2rem;
+    }
+    .form-input, .btn-login, .btn-recover {
+        width: 85%;
+    }
+    .logo-img, .recover-logo-img {
+        width: 60px;
+    }
+}
+
+/* Estilo para pantallas medianas (iPhone 12 Pro, S8 Plus) */
+@media (min-width: 300px) and (max-width: 767px) {
+    .login-background, .recover-background {
+        padding: 40px;
+        max-width: 200px;
+    }
+    .login-title, .recover-title {
+        font-size: 2.2rem;
+    }
+    .form-input, .btn-login, .btn-recover {
+        width: 90%;
+    }
+    .logo-img, .recover-logo-img {
+        width: 70px;
+    }
+}
+/* Estilo para pantallas grandes en modo vertical (Samsung Z Fold) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .login-background{
+        padding: 50px;
+        margin-top: 100px;
+        max-width: 400px;
+    }
+    .login-title, .recover-title {
+        font-size: 2.5rem;
+    }
+    .form-input, .btn-login, .btn-recover {
+        width: 95%;
+    }
+    .logo-img, .recover-logo-img {
+        width: 80px;
+    }
+}
+
+/* Estilo para pantallas grandes en modo horizontal (Samsung Z Fold) */
+/* Estilos generales para dispositivos móviles y tablets */
+@media (max-width: 1024px) {
+    body {
+        padding: 10px;
+    }
+    
+    .login-background, .recover-background {
+        padding: 40px; /* Reducir el padding en dispositivos más pequeños */
+        max-width: 90%; /* Ajuste de ancho para adaptarse al tamaño de pantalla */
+        margin: 0 auto; /* Centrado automático */
+    }
+
+    .login-title, .recover-title {
+        font-size: 2rem; /* Tamaño de fuente más pequeño en títulos */
+    }
+
+    .form-input, .btn-login, .btn-recover {
+        width: 100%; /* Ancho completo para inputs y botones */
+        font-size: 1rem; /* Ajuste de tamaño de texto */
+    }
+
+    .logo-img, .recover-logo-img {
+        width: 60px; /* Ajuste de tamaño del logo */
+    }
+    
+    .forgot-password, .signup-link, .back-to-login {
+        font-size: 0.9rem; /* Tamaño de texto reducido */
+    }
+}
+#settings-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  #settings-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: white;
+  }
+  #profile-pic-preview {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #007BFF;
+  }
+  .cta-button3 {
+    background-color: #3289e7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .cta-button3:hover {
+    background-color: #1e20a1;
+    transform: translateY(-2px);
+}

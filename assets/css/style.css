@@ -1,0 +1,1514 @@
+body {
+  font-family: 'Work Sans', 'Noto Sans', sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Color del texto */
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reducir el padding */
+  background-color: #1a1a1a; /* Fondo de la cabecera */
+  color: white; /* Color del texto */
+  position: sticky;
+  top: 0;
+  
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  width: 30px; /* Reducir el tamaño del logo */
+  height: 30px;
+}
+
+h2 {
+  margin-left: 10px;
+  font-size: 1.2rem; /* Reducir tamaño del texto del título */
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin-right: 10px; /* Reducir el margen entre enlaces */
+  text-decoration: none;
+  font-size: 0.9rem; /* Reducir tamaño del texto */
+  color: white; /* Color del texto en la navbar */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav a:hover {
+  color: #3289e7; /* Color al pasar el cursor */
+}
+
+.cta-button {
+  background-color: #3289e7; /* Botón de inicio */
+  color: white;
+  padding: 8px 15px; /* Reducir el tamaño del botón */
+  border-radius: 8px; /* Reducir el radio de los bordes */
+  font-size: 0.9rem; /* Reducir tamaño del texto del botón */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1e20a1; /* Color más oscuro al pasar el cursor */
+  transform: translateY(-2px);
+}
+.cta-button2 {
+background-color: #3289e7; /* Botón de inicio */
+color: white;
+padding: 8px 15px; /* Reducir el tamaño del botón */
+border-radius: 8px; /* Reducir el radio de los bordes */
+font-size: 0.9rem; /* Reducir tamaño del texto del botón */
+font-weight: bold;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button2:hover {
+background-color: #325ce7; /* Color más oscuro al pasar el cursor */
+transform: translateY(-2px);
+}
+
+main {
+  padding: 40px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center; /* Centrar el título */
+}
+
+.footer {
+  background-color: #1e1e1e; /* Fondo oscuro para el footer */
+  color: #ffffff; /* Texto blanco */
+  padding: 40px 0; /* Espaciado superior e inferior */
+  text-align: center; /* Centrar el texto */
+}
+
+.footer-container {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 0 20px; /* Espaciado lateral */
+}
+
+.footer-links {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.footer-links li {
+  display: inline; /* Mostrar enlaces en línea */
+  margin: 0 15px; /* Espaciado lateral */
+}
+
+.footer-links a {
+  color: #00c6ff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+.social-media {
+  margin-top: 10px; /* Espaciado superior */
+}
+
+.social-media a {
+  color: #00c6ff; /* Color de los enlaces de redes sociales */
+  margin: 0 10px; /* Espaciado lateral */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.social-media a:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+
+.social-links {
+  display: flex; /* Flexbox para alinear los íconos */
+  justify-content: center; /* Centrar íconos */
+  gap: 10px; /* Espacio entre íconos */
+}
+
+.social-links a img {
+  width: 30px; /* Ancho de los íconos */
+  height: auto; /* Altura automática para mantener proporciones */
+  transition: transform 0.2s; /* Transición suave */
+}
+
+.social-links a img:hover {
+  transform: scale(1.1); /* Aumentar tamaño al pasar el cursor */
+}
+.bg-stars {
+  position: absolute; /* Cambiar a absolute */
+  top: 0;
+  left: 0;
+  width: 100%; /* Que ocupe el ancho completo */
+  height: 100%; /* Ajustar la altura automáticamente según el contenido */
+  z-index: -2;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+.form {
+  position: relative;
+  display: block;
+  padding: 2.2rem;
+  max-width: 350px;
+  background: linear-gradient(14deg, rgba(2,0,36, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, 
+            rgb(20, 76, 99) 100%), radial-gradient(circle, rgba(2,0,36, 0.5) 0%, 
+            rgba(32, 15, 53, 0.2) 65%, rgba(14, 29, 28, 0.9) 100%);
+  border: 2px solid #fff;
+  -webkit-box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
+  box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
+  overflow: hidden;
+  z-index: +1;
+}
+
+/*------input and submit section-------*/
+
+.input-container {
+  position: relative;
+}
+
+.input-container input, .form button {
+  outline: none;
+  border: 2px solid #ffffff;
+  margin: 8px 0;
+  font-family: monospace;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 6px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 250px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-mail:focus::placeholder {
+  opacity: 0;
+  transition: opacity .9s;
+}
+
+.input-pwd:focus::placeholder {
+  opacity: 0;
+  transition: opacity .9s;
+}
+
+.submit {
+  position: relative;
+  display: block;
+  padding: 8px;
+  background-color: #c0c0c0;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.submit:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 3.9px;
+  box-shadow: 4px 5px 17px -4px #ffffff;
+  cursor: pointer;
+}
+
+.submit:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 .5s 0s linear;
+}
+
+.submit::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/*--------signup section---------*/
+
+.signup-link {
+  color: #c0c0c0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-family: monospace;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.up:hover {
+  text-decoration: underline;
+}
+
+
+/*--------header section-----------*/
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: monospace;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  animation-duration: 1.5s;
+  overflow: hidden;
+  transition: .12s;
+}
+
+.form-title span {
+  animation: flickering 2s linear infinite both;
+}
+
+.title-2 {
+  display: block;
+  margin-top: -0.5rem;
+  font-size: 2.1rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  -webkit-text-stroke: #fff 0.1rem;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  position: relative;
+  text-shadow: 0px 0px 16px #CECECE;
+}
+
+.title-2 span::before,
+.title-2 span::after {
+  content: '—';
+}
+
+.bg-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+  animation: animate 3s linear infinite;
+}
+
+.star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px); /* Mantener la caída diagonal */
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+/* Estrellas en diferentes posiciones */
+.star:nth-child(1) {
+  top: 10%;
+  left: 7%;
+  animation-duration: 3s;
+}
+
+.star:nth-child(2) {
+  top: 20%;
+  left: 85%;
+  animation-duration: 6s;
+}
+
+.star:nth-child(3) {
+  top: 30%;
+  left: 60%;
+  animation-duration: 5s;
+}
+
+.star:nth-child(4) {
+  top: 40%;
+  left: 15%;
+  animation-duration: 7s;
+}
+
+.star:nth-child(5) {
+  top: 50%;
+  left: 70%;
+  animation-duration: 5s;
+}
+
+.star:nth-child(6) {
+  top: 60%;
+  left: 35%;
+  animation-duration: 3s;
+}
+
+.star:nth-child(7) {
+  top: 70%;
+  left: 80%;
+  animation-duration: 6s;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+}
+/* Estilos generales de las cartas */
+.portfolio-container {
+max-width: 1200px;
+margin: 50px auto;
+padding: 20px;
+}
+
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+gap: 50px;
+margin-top: 40px;
+justify-content: center;
+}
+
+.portfolio-item {
+background-color: #1e1e1e;
+border: 1px solid #333;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease, border 0.3s ease;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-width: 250px;
+max-width: 300px;
+margin-bottom: 15px;
+}
+
+.portfolio-image {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Para tablets y pantallas medianas (768px - 1024px) */
+@media (max-width: 1024px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+.portfolio-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas a 200px mínimo */
+  gap: 30px;
+}
+
+.portfolio-item {
+  padding: 15px;
+  min-width: 200px;
+}
+
+.portfolio-title {
+  font-size: 1.1rem;
+}
+
+.portfolio-description {
+  font-size: 0.9rem;
+}
+}
+
+/* Para móviles grandes (480px - 768px) */
+@media (max-width: 768px) {
+.portfolio-grid {
+  grid-template-columns: 1fr; /* Una sola columna en pantallas angostas */
+  gap: 20px;
+}
+
+.portfolio-item {
+  padding: 15px;
+}
+
+.portfolio-title {
+  font-size: 1rem;
+}
+
+.portfolio-description {
+  font-size: 0.85rem;
+}
+
+.portfolio-button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+}
+
+/* Para dispositivos pequeños como Galaxy S8+ (360px - 480px) */
+@media (max-width: 480px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+/* Estilos generales de las cartas */
+.portfolio-container {
+max-width: 1200px;
+
+margin-bottom: 60px;
+padding: 20px;
+}
+
+.portfolio-grid {
+display: block;
+
+grid-template-columns: 1fr; /* Una sola columna para que cada carta esté una debajo de otra */
+gap: 20px; /* Espacio entre las cartas */
+margin-top: 40px;
+justify-content: center;
+}
+
+.portfolio-item {
+background-color: #1e1e1e;
+border: 1px solid #333;
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 40px;
+text-align: center;
+transition: transform 0.3s ease, border 0.3s ease;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-width: 100%; /* Ajusta la anchura para ocupar todo el espacio */
+margin: 0 auto;
+}
+
+.portfolio-image {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Para pantallas medianas (768px - 1024px) */
+@media (max-width: 1024px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+.portfolio-item {
+  padding: 15px;
+}
+
+.portfolio-title {
+  font-size: 1.1rem;
+}
+
+.portfolio-description {
+  font-size: 0.9rem;
+}
+}
+
+/* Para pantallas pequeñas (480px - 768px) */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+.portfolio-item {
+  padding: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.container{
+  padding: 0;
+}
+.portfolio-title {
+  font-size: 1rem;
+}
+
+.portfolio-description {
+  font-size: 0.85rem;
+}
+
+.portfolio-button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+}
+
+/* Para dispositivos muy pequeños como el Galaxy S8+ (360px - 480px) */
+
+@media (max-width: 768px) {
+  
+.portfolio-item {
+  padding: 15px;
+}
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+.portfolio-title {
+  font-size: 1rem;
+}
+.container{
+  padding: 0;
+}
+.portfolio-description {
+  font-size: 0.85rem;
+}
+
+.portfolio-button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+}
+
+/* Para dispositivos muy pequeños como el Galaxy S8+ (360px - 480px) */
+@media (max-width: 560px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+.portfolio-item {
+  border: 1px solid #333; /* Bordes oscuros */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1e1e1e; /* Fondo del portafolio */
+  width: 300px; /* Ancho ajustado */
+  text-align: center; /* Centrar texto */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra intensa */
+  transition: transform 0.3s ease;
+}
+.portfolio-item {
+width: 80%; /* Ocupa todo el ancho disponible */
+
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05); /* Aumentar al pasar el cursor */
+  grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  gap: 20px; /* Menor espacio entre tarjetas */
+
+}
+.container{
+  padding: 0;
+}
+.portfolio-image {
+  width: 100%;
+  height: 180px; /* Ajuste de altura */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.portfolio-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* Color de texto */
+}
+
+.portfolio-description {
+  font-size: 1rem;
+  color: #cccccc; /* Color del texto */
+  margin-top: 10px;
+}
+
+/* Estilos específicos para el hover */
+.portfolio-item:hover {
+  border-color: #ffffff; /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Puedes aplicar diferentes estilos según el tipo de plan */
+.portfolio-item.plus {
+  border: 3px solid #333; /* Bordes más gruesos para los destacados */
+  transition: border-color 0.3s ease;
+}
+
+.portfolio-item.plus:hover {
+  border-color: #ffffff; /* Cambio de color en hover */
+}
+
+
+
+
+}
+
+
+/* Animación de estrellas que ya tenías */
+.bg-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 80%;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+             0 0 0 8px rgba(255,255,255,0.1),
+             0 0 20px rgba(255,255,255,0.1);
+}
+.cta-button.text{
+background-color: #00000000 ;
+text-decoration: none;
+background-size: cover;
+
+}
+
+.whatsapp-button {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px; /* Tamaño del botón */
+height: 80px; /* Tamaño del botón */
+background-color: #1e1e1e;
+border-radius: 50%;
+position: fixed; /* Fijo para mantener visible al hacer scroll */
+bottom: 20px; /* Distancia desde el fondo de la ventana */
+left: 20px; /* Distancia desde el lado izquierdo de la ventana */
+text-decoration: none; /* Quita el subrayado */
+}
+
+.whatsapp-button img {
+width: 50px; /* Tamaño del logo */
+height: 50px; /* Tamaño del logo */
+}
+.header {
+top: 0;
+left: 0;
+width: 100%;
+margin-left: -2%;
+padding: 10px -50px; /* Ajusta el padding según tus necesidades */
+background-color: #1a1a1a; /* Fondo del header */
+z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de profundidad */
+}
+
+.whatsapp-number {
+color: white; /* Color del número */
+font-size: 12px; /* Tamaño del texto */
+position: absolute;
+bottom: -25px; /* Ajusta la posición vertical del número */
+left: 50%;
+transform: translateX(-50%);
+white-space: nowrap; /* Evita que el texto se divida */
+}
+.footer {
+background-color: #1e1e1e; /* Fondo oscuro para el footer */
+color: #ffffff; /* Texto blanco */
+padding: 20px 0; /* Espaciado superior e inferior */
+text-align: center; /* Centrar el texto */
+width: 100%;
+bottom: 0;
+}
+
+.footer-container {
+max-width: 1200px; /* Ancho máximo del contenido */
+margin: 0 auto; /* Centrar el contenedor */
+padding: 0 20px; /* Espaciado lateral */
+width: 100%;
+justify-content: end;
+}
+
+.footer-links {
+list-style: none; /* Sin viñetas */
+padding: 0; /* Sin padding */
+margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.footer-links li {
+display: inline; /* Mostrar enlaces en línea */
+margin: 0 15px; /* Espaciado lateral */
+}
+
+.footer-links a {
+color: #00c6ff; /* Color del texto de los enlaces */
+text-decoration: none; /* Sin subrayado */
+}
+
+.footer-links a:hover {
+text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+/* Ajustes generales */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+.whatsapp-button img{
+height: 30px;
+width: 30px;
+}
+body, .container {
+    padding: 0 10px;
+}
+
+/* Header */
+.header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-left h2 {
+    font-size: 1rem;
+}
+
+.nav {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.nav a {
+    font-size: 0.8rem;
+    margin: 5px ;
+}
+
+.cta-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+
+}
+
+/* Formulario */
+.form {
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+.input-container input {
+    width: 100%;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Portfolio */
+.portfolio-container {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.portfolio-item {
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 10px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+    display: block;
+}
+
+.social-links a img {
+    width: 25px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    left: 10px;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-number {
+    font-size: 10px;
+}
+.footer{
+  width: 100%;
+}
+}
+@media (max-width: 768px) {
+  /* Footer */
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+  .footer {
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .footer-links li {
+    margin: 5px 0; /* Reducir el margen entre enlaces */
+    display: inline-block; /* Mantener los enlaces en línea */
+  }
+  .social-links {
+    margin-top: 15px; /* Separación con los enlaces del footer */
+  }
+  .social-links a img {
+    width: 25px; /* Tamaño más pequeño para íconos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+/* Header */
+
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.container{
+  width: 100%;
+}
+/* Footer */
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+}
+@media (max-width: 1025px) {
+/* Ajustes para tabletas en .container */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+.whatsapp-button img{
+height: 30px;
+width: 30px;
+}
+.container {
+  display: block;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Ajustes en el contenido principal */
+main {
+    padding: 20px 10px;
+}
+
+/* Títulos y textos */
+h1 {
+    font-size: 2.5rem; /* Tamaño de título menor en tabletas */
+    text-align: center; /* Centrar el título */
+}
+
+p, h2, h3 {
+    font-size: 1rem; /* Reducir tamaño de otros textos */
+    line-height: 1.4;
+    margin: 20px;
+}
+
+/* Para evitar solapamiento en tarjetas o secciones */
+.portfolio-grid {
+    grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+    gap: 20px;
+}
+}
+@media (max-width: 1200px) {
+.form {
+    max-width: 320px;
+    padding: 2rem;
+}
+.header{
+  width: 99%;
+}
+}
+div.container{
+
+  padding: 0;
+
+}
+@media (max-width: 1200px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+  .form {
+    max-width: 300px;
+    padding: 1.8rem;
+}
+.text.home{
+  display: block;
+}
+.titlehome{
+  margin-top: 120px;
+  display: block;
+}
+.cta-button2{
+  position: absolute;
+  margin-top: -36%;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+}
+
+@media (max-height: 900px) {
+
+main{
+  margin-top: 120px;
+}
+body{
+  padding: 0;
+}
+
+}
+@media (max-width: 760px) {
+  /* Footer */
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+  main{
+    padding-left: 0px;
+    justify-content: auto ;
+  }
+  .footer {
+      padding: 15px 10px; /* Reduce el espaciado para que quepa en la pantalla */
+      text-align: center;
+  }
+  
+  .titlehome{
+    display: block;
+    margin-top: 450px;
+  }
+  .header{
+    height: 180px;
+  }
+  body{
+    padding: 0;
+  }
+  .container{
+    padding: 0;
+  }
+  .footer-container {
+      max-width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+      padding: 0;
+      margin: 0 auto;
+  }
+  .image1 {
+    display: none;
+    background-image: url('/Frontend/imagenes/imagen1.jpg'); /* Imagen para Web Design */
+}
+  .footer-links {
+      display: flex;
+      flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+      align-items: center;
+      margin: 10px 0;
+  }
+
+  .footer-links li {
+      margin: 5px 0; /* Reduce el espacio entre enlaces */
+  }
+
+  .footer-links a {
+      font-size: 0.9rem; /* Tamaño de fuente más pequeño para enlaces */
+  }
+
+  .social-links {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .social-links a img {
+      width: 25px; /* Tamaño más pequeño para íconos de redes sociales */
+  }
+  
+}
+
+@media (max-width: 768px) {
+.form {
+    max-width: 280px;
+    padding: 1.5rem;
+    
+}
+
+}
+}
+@media (max-width: 900px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+.image1 {
+    background-image: none;}
+.header{
+  padding-bottom: -100px;
+}
+main{
+  margin-top: 170px;
+
+}
+}
+/* Media Query para pantallas de 900px de ancho y 400px de altura */
+@media (max-width: 900px) and (max-height: 20px) {
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.whatsapp-button img{
+  height: 30px;
+  width: 30px;
+}
+
+  /* Ajustes para el cuerpo y el contenedor principal */
+  body, .container {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden; /* Evita el scroll horizontal */
+  }
+  div.right{
+    display: none;
+  }
+  .left{
+    width: 100%;
+  }
+  main{
+    margin: 40px;
+    background-image: none;
+  }
+  /* Ajustes de cabecera */
+  .header {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+  }
+  .titlehome{
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 700px;
+  }
+  .faq-item{
+    margin-top: 140px;
+  }
+  p.text.home{
+    text-align: start;
+    margin-bottom: 500px;
+    content: initial;
+    
+  }
+  img.main-image{
+    display: none;
+  }
+  /* Ajustes de navegación */
+
+  /* Botón principal */
+  .cta-button, .cta-button2 {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+  }
+
+  /* Títulos */
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  /* Ajustes para el formulario */
+  .form {
+      max-width: 250px;
+      padding: 1rem;
+  }
+
+  .input-container input {
+      width: 100%;
+  }
+
+  /* Ajustes para el contenedor de portafolio */
+  .portfolio-container {
+      padding: 10px;
+      margin: 0 auto;
+  }
+
+  .portfolio-grid {
+      grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+      gap: 10px;
+  }
+
+  .portfolio-item {
+      padding: 10px;
+  }
+
+  /* Ajustes del pie de página */
+  .footer {
+      padding: 10px;
+      font-size: 0.8rem;
+  }
+
+  .footer-links li {
+      margin: 5px 0;
+  }
+
+  /* Ajustes para el menú de perfil y el perfil */
+  #profile-info {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+  }
+
+  #profile-pic {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+/* Contenedor del perfil */
+
+
+/* Estilos adicionales opcionales */
+/* Estilos para la foto de perfil */
+.hidden {
+  display: none;
+  top: -10000px;
+  height: 0px;
+}
+
+#profile-pic {
+  width: 40px;
+  height: 40px;
+  margin-top: -20%;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid #007BFF;
+  transition: all 0.3s ease;
+}
+
+#profile-pic:hover {
+  border-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  margin-top: 10px;
+  right: 10px;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+#dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #24292e;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+#dropdown-menu a:hover {
+  background-color: #f6f8fa;
+  color: #0366d6;
+}
+
+#dropdown-menu a:not(:last-child) {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+#profile-info {
+  position: relative;
+  display: inline-block;
+}

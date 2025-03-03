@@ -1,0 +1,287 @@
+a {
+    text-decoration: none;
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: flex-start; /* Alinea más arriba */
+    justify-content: center;
+    height: 90vh; /* Ajuste para subir más el contenido */
+    padding: 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    flex-direction: row;
+  }
+  
+  .left {
+    flex: 1;
+    padding-right: 50px;
+    text-align: left;
+  }
+  
+  .left h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  
+  .left p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .boton.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+/* Ajustar la distancia entre secciones */
+/* Ajustar la distancia entre secciones */
+/* Ajuste para subir la sección "¿Cómo trabajamos?" más cerca de la sección Hero */
+.how-we-work-section {
+    padding: 20px 20px; /* Reduzco más el padding superior e inferior */
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    margin-top: -200px; /* Aumento el margen negativo para subir más la sección */
+  }
+  
+  .how-we-work-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px; /* Mantengo margen reducido para subir título */
+  }
+  
+  .how-we-work-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Ajuste para las tarjetas FAQ */
+  .faq-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Mantengo tarjetas flexibles */
+    gap: 75px; /* Reduzco aún más el espacio entre las tarjetas */
+    flex-wrap: wrap;
+  }
+  
+  .faq-item {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduzco margen inferior */
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Efecto hover */
+  .faq-item:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+    border-width: 3px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.1rem;
+    color: #00c6ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+    flex-grow: 1;
+  }
+  
+  .about-us-section {
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    text-align: center;
+    color: #fff; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+  }
+  
+  .about-us-section h2 {
+    font-size: 3rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .about-us-section p {
+    font-size: 1.5rem; /* Tamaño del párrafo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    max-width: 800px; /* Ancho máximo del párrafo */
+    margin: 0 auto; /* Centra el párrafo */
+  }
+  
+
+/* Contenedor de la sección de servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo común para todas las imágenes */
+.service-image {
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Especificar el fondo para cada imagen de servicio */
+.image1 {
+    background-image: url('/Frontend/imagenes/imagen1.jpg'); /* Imagen para Web Design */
+}
+
+.image2 {
+    background-image: url('/Frontend/imagenes/imagen2.jpg'); /* Imagen para Web Development */
+}
+
+.image3 {
+    background-image: url('/Frontend/imagenes/imagen3.jpg'); /* Imagen para Mobile App Development */
+}
+
+.image4 {
+    background-image: url('/Frontend/imagenes/imagen4.jpg'); /* Imagen para Branding & Identity */
+}
+.intro{
+    background-image: url("/Frontend/imagenes/image.jpg");
+    background-repeat: repeat-y;
+    background-size: 60%;
+    background-position: center;
+    height: 400px;
+    border-radius: 10px;
+}
+.main.title{
+    color: aliceblue;
+}
+.main.desc{
+    width: 18%;
+}
+
+.service {
+    width: 30%; /* Hacer el contenedor más pequeño */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;  /* Centra el texto */
+    margin: 0 auto; /* Centra el contenedor */
+    font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    background-color: rgba(36, 36, 36, 0.541);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Menor espacio entre los servicios */
+}
+
+.service-image {
+    background-size: cover;
+}
+.title.service{
+    margin: 2%;
+    margin-top: 5%;
+    background-color: #3289e7;
+}
+.cta-button {
+    padding: 10px 20px; /* Espaciado del botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.dropdown-menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute; /* Posicionar el menú de manera absoluta */
+    background-color: white; /* Fondo blanco para el menú */
+    border: 1px solid #ccc; /* Borde del menú */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+.dropdown-menu ul {
+    list-style-type: none; /* Quitar puntos de la lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+.dropdown-menu li {
+    padding: 10px; /* Espaciado interno */
+}
+
+.dropdown-menu li a {
+    text-decoration: none; /* Sin subrayado */
+    color: black; /* Color del texto */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Tamaño del botón */
+  height: 80px; /* Tamaño del botón */
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  position: fixed; /* Fijo para mantener visible al hacer scroll */
+  bottom: 20px; /* Distancia desde el fondo de la ventana */
+  left: 20px; /* Distancia desde el lado izquierdo de la ventana */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.whatsapp-button img {
+  width: 50px; /* Tamaño del logo */
+  height: 50px; /* Tamaño del logo */
+}
+
+.whatsapp-number {
+  color: white; /* Color del número */
+  font-size: 12px; /* Tamaño del texto */
+  position: absolute;
+  bottom: -25px; /* Ajusta la posición vertical del número */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Evita que el texto se divida */
+}

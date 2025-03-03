@@ -1,0 +1,339 @@
+
+
+.plans {
+    display: flex;
+    gap: 45px;
+    justify-content: center; /* Centrar los planes */
+    flex-wrap: wrap; /* Permitir que los planes se envuelvan */
+}
+
+.plan {
+    border: 1px solid #333; /* Bordes oscuros */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fondo de los planes */
+    width: 300px; /* Ancho ajustado para los planes */
+    text-align: center; /* Centrar texto dentro de los planes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el cursor */
+}
+
+.plan-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Estilos para cada plan */
+.plan.plus {
+    color: #ffffff; /* Color de texto del plan Plus */
+    border: 3px solid #333; /* Bordes oscuros */
+    transition: border-color 0.3s ease; /* Transición para el color del borde */
+}
+
+.plan.plus:hover {
+    border-color: #ffffff; /* Cambia el color del borde al pasar el mouse */
+}
+
+.plan.premium {
+    color: #00c6ff; /* Color de texto del plan Premium */
+    border: 3px solid #333; /* Bordes oscuros */
+    transition: border-color 0.3s ease; /* Transición para el color del borde */
+}
+
+.plan.premium:hover {
+    border-color: #00c6ff; /* Cambia el color del borde al pasar el mouse */
+}
+
+.plan.ultra {
+    border: 3px solid #333; /* Bordes oscuros */
+    transition: border-color 0.3s ease; /* Transición para el color del borde */
+}
+
+.plan.ultra:hover {
+    border-color: #e05200; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+/* El resto de tu CSS permanece igual */
+
+
+@keyframes gradient-animation {
+    0% { color: #e28000; }
+    14% { color: #ff9800; }
+    28% { color: #ffc340; }
+    42% { color: #e05200; }
+    56% { color: #ff0000; }
+    71% { color: #e05200; }
+    85% { color: #ffc340; }
+    100% { color: #ff9800; }
+}
+
+.ultra-title,
+.ultra-text,
+.price-ultra {
+    background: linear-gradient( #ffa6c4, #4c0555); /* Degradado para el texto */
+    background-size: 200% 200%; /* Aumentar el tamaño del fondo para permitir la animación */
+    -webkit-background-clip: text; /* Aplicar el degradado solo al texto */
+    background-clip: text; /* Aplicar el degradado solo al texto */
+    color: transparent; /* Hacer el texto transparente */
+    animation: gradient-animation 3.5s ease infinite; /* Animación del degradado */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+/* Especificaciones para tamaños */
+.ultra-title {
+    font-size: 3rem; /* Tamaño de la fuente del título */
+}
+.ultra-text{
+    color: linear-gradient(180deg, #ffa6c4, #4c0555);
+}
+.price-ultra {
+    font-size: 1.75rem; /* Tamaño de la fuente del precio */
+}
+
+
+.price {
+    font-size: 1.75rem; /* Tamaño de la fuente del precio */
+    font-weight: 900; /* Peso de la fuente */
+}
+
+.plan ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.plan li {
+    margin-top: 10px; /* Espacio entre características */
+}
+
+.premium-feature {
+    color: #ff4081; /* Color de texto de las características del plan Premium */
+}
+
+.premium-feature {
+    color: #00c6ff; /* Color de texto de las características del plan Ultra */
+}
+
+.plan .plan-button {
+    margin-top: 20px; /* Espacio superior para el botón */
+    background-color: #3289e7; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
+    font-size: 1rem; /* Tamaño del texto del botón */
+    font-weight: bold; /* Peso de la fuente del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.plan .plan-button:hover {
+    background-color: #2872bf; /* Color más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Levantar el botón al pasar el cursor */
+}
+
+main {
+    flex: 1; /* Permitir que el main ocupe todo el espacio disponible */
+}
+
+
+
+.social-media {
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.social-media a {
+    color: #00c6ff; /* Color de los enlaces de redes sociales */
+    margin: 0 10px; /* Espaciado lateral */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+
+.social-links {
+    display: flex; /* Flexbox para alinear los íconos */
+    justify-content: center; /* Centrar íconos */
+    gap: 10px; /* Espacio entre íconos */
+}
+
+.social-links a img {
+    width: 30px; /* Ancho de los íconos */
+    height: auto; /* Altura automática para mantener proporciones */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el cursor */
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-section h2 {
+    font-size: 3rem; /* Mismo tamaño que "Pricing & Plans" */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del título */
+}
+
+/* FAQ Item Wrapper (5 en la fila superior y 3 en la inferior) */
+.faq-wrapper {
+    display: flex;
+    justify-content: center; /* Alinear tarjetas al centro */
+    align-items: stretch; /* Asegura que todos los cuadros sean del mismo tamaño */
+    gap: 30px; /* Espacio entre las tarjetas */
+    width: 100%;
+    max-width: 1200px; /* Tamaño máximo */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+}
+
+/* Estilos para las tarjetas FAQ */
+.faq-item {
+    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio */
+    min-width: 150px; /* Ancho mínimo para las tarjetas */
+    max-width: 200px; /* Ancho máximo para las tarjetas */
+    background-color: #1e1e1e; /* Fondo de las tarjetas */
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Espacio inferior entre las tarjetas */
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease; /* Transición para el borde */
+    display: flex; /* Utiliza flex para centrar contenido */
+    flex-direction: column; /* Coloca título y respuesta uno debajo del otro */
+    justify-content: space-between; /* Asegura que el contenido esté espaciado correctamente */
+}
+
+/* Efecto de hover */
+.faq-item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    border-color: #ffffff; /* Cambiar el color del borde a blanco */
+    border-width: 3px; /* Grosor del borde */
+}
+
+/* Estilos para las preguntas */
+.faq-item h3 {
+    font-size: 1.1rem; /* Tamaño moderado para la pregunta */
+    cursor: pointer;
+    color: #00c6ff; /* Color original de las preguntas */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacio entre la pregunta y la respuesta */
+    text-align: center; /* Centrar el título */
+}
+
+
+/* Estilos para las respuestas */
+.faq-item p {
+    font-size: 1rem; /* Tamaño más grande para la respuesta */
+    text-align: center;
+    margin-top: 5px; /* Espacio superior para la respuesta */
+    flex-grow: 1; /* Permite que la respuesta use espacio adicional */
+}
+
+/* Media Queries para el estilo pirámide invertida */
+@media (min-width: 768px) {
+    .faq-wrapper > :nth-child(-n+5) { 
+        flex: 1 1 calc(20% - 10px); /* 5 tarjetas en la fila superior */
+    }
+    
+    .faq-wrapper > :nth-child(n+6) { 
+        flex: 1 1 calc(30% - 5px); /* 3 tarjetas en la fila inferior */
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-wrapper > :nth-child(n) {
+        flex: 1 1 100%; /* Tarjetas a ancho completo en pantallas pequeñas */
+    }
+}
+
+  /* Estrellas en diferentes posiciones */
+  .star:nth-child(1) { /* representa el numero de la estrela y cada cuando aparece*/
+    top: 10%;
+    left: 5%;
+    animation-duration: 3s;
+  }
+  
+  .star:nth-child(2) {
+    top: 20%;
+    left: 85%;
+    animation-duration: 7s;
+  }
+  
+  .star:nth-child(3) {
+    top: 30%;
+    left: 60%;
+    animation-duration: 5s;
+  }
+  
+  .star:nth-child(4) {
+    top: 40%;
+    left: 15%;
+    animation-duration: 7.3s;
+  }
+  
+  .star:nth-child(5) {
+    top: 50%;
+    left: 70%;
+    animation-duration: 4s;
+  }
+  
+  .star:nth-child(6) {
+    top: 60%;
+    left: 35%;
+    animation-duration: 3s;
+  }
+  
+  .star:nth-child(7) {
+    top: 70%;
+    left: 90%;
+    animation-duration: 11s;
+  }
+  
+  .container {
+    z-index: 1;
+  }
+
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Tamaño del botón */
+    height: 80px; /* Tamaño del botón */
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    position: fixed; /* Fijo para mantener visible al hacer scroll */
+    bottom: 20px; /* Distancia desde el fondo de la ventana */
+    left: 20px; /* Distancia desde el lado izquierdo de la ventana */
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  .whatsapp-button img {
+    width: 50px; /* Tamaño del logo */
+    height: 50px; /* Tamaño del logo */
+  }
+  
+  .whatsapp-number {
+    color: white; /* Color del número */
+    font-size: 12px; /* Tamaño del texto */
+    position: absolute;
+    bottom: -25px; /* Ajusta la posición vertical del número */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Evita que el texto se divida */
+  }
